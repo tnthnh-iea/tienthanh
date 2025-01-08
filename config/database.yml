@@ -85,6 +85,7 @@ production:
     <<: *default
     database: tien_thanh_production
     username: tien_thanh
+    url: <%= ENV['DATABASE_URL'] %>
     password: <%= ENV["TIEN_THANH_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
